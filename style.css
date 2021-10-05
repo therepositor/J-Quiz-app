@@ -5,14 +5,32 @@ body   {
     font: 14px "Raleway",Arial,sans-serif;
     position: relative;
 }
+.mobile-banner  {
+    position: fixed;
+    z-index: 99;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 320px;
+}
+.mobile-banner a img {
+    width: 100%;
+}
 header  {
     box-shadow: 0 2px 16px 0 rgb(0 0 0 / 8%);
     position: fixed;
+    z-index: 99;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
 }
 main {
     position: relative;
     left: 0;
-    top: 6rem;
+    top: 7rem;
+    z-index: 0;
 }
 .header-horizontal-line    {
     border-bottom: 1px solid rgba(208,208,208,0.5);
@@ -136,7 +154,7 @@ main article section h1{
 .question-choices-list  {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .question-choices-item  {
     background: #dfd9d9d6;
@@ -151,4 +169,46 @@ main article section h1{
 }
 .question-choices-list .question-choices-item div img {
     width: 140px;
+}
+.question-choices-list .question-choices-item .color    {
+    padding: 0.3rem;
+    width: 150px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.question-choices-list .question-choices-item div .orange {
+    background-color: orange;
+    width: 131px;
+    height: 131px;
+}
+.question-choices-list .question-choices-item div .purple {
+    background-color: purple;
+    width: 131px;
+    height: 131px;
+}
+.question-choices-list .question-choices-item div .red    {
+    background-color: red;
+    width: 131px;
+    height: 131px;
+}
+.question-choices-list .question-choices-item div .blue   {
+    background-color: blue;
+    width: 131px;
+    height: 131px;
+}
+.question-choices-list .question-choices-item div .yellow {
+    background-color: yellow;
+    width: 131px;
+    height: 131px;
+}
+.input-label-container .question-choices-item .input-label  {
+   width: auto;
+   height: auto;
+    text-align: left;
+}
+.input-label-container  {
+    display: flex;
+    flex-direction: column;
 }
